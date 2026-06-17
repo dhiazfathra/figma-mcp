@@ -505,26 +505,30 @@
 |--------|------|-------|--------------|
 | M-1 | 3 | Setup & Auth | Flutter project, Login screen, OTP verification |
 | M-2 | 4 | Auth Complete | Register, Forgot Password, Onboarding tutorial |
-| M-3 | 5 | Homepage | Non-login homepage, Logged-in homepage |
-| M-4 | 6 | Homepage Complete | Search functionality, Brand carousel |
-| M-5 | 7 | Brands | Brand listing, Brand detail |
-| M-6 | 8 | Brands Complete | Clinic page, Treatment page |
-| M-7 | 9 | Booking (Part 1) | Clinic selection, Treatment selection, Date picker |
-| M-8 | 10 | Booking (Part 2) | Time picker, Booking confirmation, Payment |
-| M-9 | 11 | Booking Complete | Booking status, Push notifications |
-| M-10 | 12 | Profile | Profile page, Edit profile, Address management |
-| M-11 | 13 | Profile Complete | Change phone, Change password, Face ID, Privacy |
-| M-12 | 14 | Promotions | Promotion listing, Promotion detail |
-| M-13 | 15 | History & Skin | Booking history, Skin analysis questionnaire |
-| M-14 | 16 | Phase 2 Start | Healthy Food listing, Food detail, Food cart |
-| M-15 | 17 | Food Complete | Food order, Order tracking |
-| M-16 | 18 | Shop | Shop listing, Product detail, Shop cart |
-| M-17 | 19 | Shop Complete | Shop order, Order tracking |
-| M-18 | 20 | Treatment & Journey | Treatment transaction, Skin journey |
-| M-19 | 21 | Polish (Part 1) | UI polish, Animation, Performance |
-| M-20 | 22 | Polish (Part 2) | Bug fixes, Edge cases, Accessibility |
-| M-21 | 23 | QA & Testing | Integration testing, E2E testing |
-| M-22 | 24 | Store Prep | App store assets, Submission, Release |
+| **BUF-1** | **5** | **Buffer** | **Auth integration testing, Bug fixes, Documentation** |
+| M-3 | 6 | Homepage | Non-login homepage, Logged-in homepage |
+| M-4 | 7 | Homepage Complete | Search functionality, Brand carousel |
+| M-5 | 8 | Brands | Brand listing, Brand detail |
+| M-6 | 9 | Brands Complete | Clinic page, Treatment page |
+| M-7 | 10 | Booking (Part 1) | Clinic selection, Treatment selection, Date picker |
+| M-8 | 11 | Booking (Part 2) | Time picker, Booking confirmation, Payment |
+| M-9 | 12 | Booking Complete | Booking status, Push notifications |
+| **BUF-2** | **13** | **Buffer** | **Booking integration testing, Payment flow validation, Bug fixes** |
+| M-10 | 14 | Profile | Profile page, Edit profile, Address management |
+| M-11 | 15 | Profile Complete | Change phone, Change password, Face ID, Privacy |
+| M-12 | 16 | Promotions | Promotion listing, Promotion detail |
+| M-13 | 17 | History & Skin | Booking history, Skin analysis questionnaire |
+| M-14 | 18 | Phase 2 Start | Healthy Food listing, Food detail, Food cart |
+| M-15 | 19 | Food Complete | Food order, Order tracking |
+| M-16 | 20 | Shop | Shop listing, Product detail, Shop cart |
+| M-17 | 21 | Shop Complete | Shop order, Order tracking |
+| M-18 | 22 | Treatment & Journey | Treatment transaction, Skin journey |
+| **BUF-3** | **23** | **Buffer** | **Phase 2 integration testing, Cross-feature validation, Bug fixes** |
+| M-19 | 24 | Polish (Part 1) | UI polish, Animation, Performance |
+| M-20 | 25 | Polish (Part 2) | Bug fixes, Edge cases, Accessibility |
+| M-21 | 26 | QA & Testing | Integration testing, E2E testing |
+| **BUF-4** | **27** | **Buffer** | **Final QA, Regression testing, App store prep validation** |
+| M-22 | 28 | Store Prep | App store assets, Submission, Release |
 
 ---
 
