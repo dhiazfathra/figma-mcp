@@ -591,6 +591,9 @@ gantt
 | App store rejection | Medium | Follow guidelines, Pre-submission review |
 | Scope creep | High | Strict MVP scope, Deferred features documented |
 | Team burnout | Medium | Realistic sprint loads, Buffer weeks included |
+| Buffer week misuse | Medium | Buffer weeks are for integration testing and bug fixes, not new features |
+| Integration issues | High | Buffer weeks placed after critical features (Auth, Booking, Phase 2) |
+| Timeline slippage | Medium | 4 buffer weeks provide 17% schedule flexibility |
 
 ---
 
