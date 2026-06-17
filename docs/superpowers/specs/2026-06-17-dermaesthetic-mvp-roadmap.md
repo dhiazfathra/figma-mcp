@@ -482,6 +482,12 @@
 | Week 7 | CMS dashboard (React/Next.js), Content management for promotions, brands |
 | Week 8 | API documentation, Performance optimization, Security audit |
 
+### Buffer Sprints (Weeks 9-10): Integration & Security
+| Week | Tasks |
+|------|-------|
+| Week 9 | Integration testing, Bug fixes, API documentation updates |
+| Week 10 | Performance optimization, Security audit, Final API adjustments |
+
 ---
 
 ## Weekly Sprint Plan
