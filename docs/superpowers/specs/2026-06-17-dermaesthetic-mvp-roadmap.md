@@ -20,6 +20,26 @@
 
 ---
 
+## Buffer Strategy
+
+**Buffer Placement Rationale:**
+
+| Buffer | Week | Purpose |
+|--------|------|---------|
+| BUF-1 | 5 | Auth integration testing, Bug fixes after critical auth flow |
+| BUF-2 | 13 | Booking integration testing, Payment flow validation |
+| BUF-3 | 23 | Phase 2 integration testing, Cross-feature validation |
+| BUF-4 | 27 | Final QA, Regression testing, App store prep validation |
+
+**Buffer Usage Rules:**
+1. Buffer weeks are for **integration testing and bug fixes**, not new features
+2. Buffer weeks can be used for **documentation and code reviews**
+3. Buffer weeks can be used for **performance optimization**
+4. Buffer weeks **cannot be used for scope expansion**
+5. If no issues arise, buffer weeks can be used for **technical debt reduction**
+
+---
+
 ## Team Allocation
 
 | Role | Count | Responsibility |
