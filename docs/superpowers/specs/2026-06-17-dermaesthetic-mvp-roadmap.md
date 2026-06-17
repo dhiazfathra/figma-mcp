@@ -577,6 +577,7 @@ gantt
     Phase 2 APIs (Transaction, Journey)  :b6, after b5, 7d
     CMS Dashboard                        :b7, after b6, 7d
     Polish & Documentation               :b8, after b7, 7d
+    Buffer (Integration & Security)      :bbuf, after b8, 14d
 
     section Mobile (Flutter)
     Setup & Auth (Login, OTP)            :m1, 2026-07-06, 7d
@@ -622,6 +623,7 @@ gantt
 | Buffer week misuse | Medium | Buffer weeks are for integration testing and bug fixes, not new features |
 | Integration issues | High | Buffer weeks placed after critical features (Auth, Booking, Phase 2) |
 | Timeline slippage | Medium | 4 buffer weeks provide 17% schedule flexibility |
+| Backend delays | Medium | Backend has 2 buffer weeks for integration and security testing |
 
 ---
 
