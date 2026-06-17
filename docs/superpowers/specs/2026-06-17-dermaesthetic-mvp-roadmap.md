@@ -498,6 +498,8 @@
 | B-6 | 6 | Phase 2 APIs | Treatment Transaction, Skin Journey APIs |
 | B-7 | 7 | CMS | Dashboard, Content management |
 | B-8 | 8 | Polish | Documentation, Optimization, Security |
+| B-9 | 9 | Buffer | Integration testing, Bug fixes, API documentation |
+| B-10 | 10 | Buffer | Performance optimization, Security audit |
 
 ### Mobile Sprints (Flutter Devs)
 
