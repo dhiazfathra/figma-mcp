@@ -659,3 +659,4 @@ graph TD
 - [ ] Timeline accepted (28 weeks mobile with 4 buffer weeks, 10 weeks backend with 2 buffer weeks)
 - [ ] Buffer week placement approved
 - [ ] Buffer usage rules approved
+- [ ] Backend buffer weeks approved (Weeks 9-10 for integration and security)
