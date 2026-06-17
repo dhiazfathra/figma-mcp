@@ -623,4 +623,5 @@ graph TD
 - [ ] Risk register reviewed
 - [ ] Dependencies validated
 - [ ] Deferred features confirmed (Laundry, Loyalty)
-- [ ] Timeline accepted (22 weeks mobile, 8 weeks backend)
+- [ ] Timeline accepted (28 weeks mobile with 4 buffer weeks, 8 weeks backend)
+- [ ] Buffer week placement approved
