@@ -536,7 +536,7 @@
 
 ```mermaid
 gantt
-    title Dermaesthetic Super Apps - MVP Timeline
+    title Dermaesthetic Super Apps - MVP Timeline (with Buffer)
     dateFormat  YYYY-MM-DD
     axisFormat  %b %d
 
@@ -553,14 +553,16 @@ gantt
     section Mobile (Flutter)
     Setup & Auth (Login, OTP)            :m1, 2026-07-06, 7d
     Auth Complete (Register, Onboarding) :m2, after m1, 7d
-    Homepage (Non-login, Logged-in)      :m3, after m2, 7d
+    Buffer (Auth Integration)            :buf1, after m2, 7d
+    Homepage (Non-login, Logged-in)      :m3, after buf1, 7d
     Homepage Complete (Search)           :m4, after m3, 7d
     Brands (Listing, Detail)             :m5, after m4, 7d
     Brands Complete (Clinic, Treatment)  :m6, after m5, 7d
     Booking Part 1 (Selection, Date)     :m7, after m6, 7d
     Booking Part 2 (Payment)             :m8, after m7, 7d
     Booking Complete (Status, Push)      :m9, after m8, 7d
-    Profile (Edit, Address)              :m10, after m9, 7d
+    Buffer (Booking Integration)         :buf2, after m9, 7d
+    Profile (Edit, Address)              :m10, after buf2, 7d
     Profile Complete (Phone, Face ID)    :m11, after m10, 7d
     Promotions                           :m12, after m11, 7d
     History & Skin Analysis              :m13, after m12, 7d
@@ -569,10 +571,12 @@ gantt
     Shop (Listing, Cart)                 :m16, after m15, 7d
     Shop Complete (Order)                :m17, after m16, 7d
     Treatment & Skin Journey             :m18, after m17, 7d
-    Polish Part 1                        :m19, after m18, 7d
+    Buffer (Phase 2 Integration)         :buf3, after m18, 7d
+    Polish Part 1                        :m19, after buf3, 7d
     Polish Part 2                        :m20, after m19, 7d
     QA & Testing                         :m21, after m20, 7d
-    Store Preparation                    :m22, after m21, 7d
+    Buffer (Final QA)                    :buf4, after m21, 7d
+    Store Preparation                    :m22, after buf4, 7d
 ```
 
 ---
