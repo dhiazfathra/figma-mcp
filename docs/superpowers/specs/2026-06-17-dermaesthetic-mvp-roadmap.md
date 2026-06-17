@@ -38,6 +38,13 @@
 4. Buffer weeks **cannot be used for scope expansion**
 5. If no issues arise, buffer weeks can be used for **technical debt reduction**
 
+**Backend Buffer Weeks:**
+
+| Buffer | Week | Purpose |
+|--------|------|---------|
+| B-BUF-1 | 9 | Integration testing, Bug fixes, API documentation updates |
+| B-BUF-2 | 10 | Performance optimization, Security audit, Final API adjustments |
+
 ---
 
 ## Team Allocation
@@ -524,8 +531,8 @@
 | B-6 | 6 | Phase 2 APIs | Treatment Transaction, Skin Journey APIs |
 | B-7 | 7 | CMS | Dashboard, Content management |
 | B-8 | 8 | Polish | Documentation, Optimization, Security |
-| B-9 | 9 | Buffer | Integration testing, Bug fixes, API documentation |
-| B-10 | 10 | Buffer | Performance optimization, Security audit |
+| **B-BUF-1** | **9** | **Buffer** | **Integration testing, Bug fixes, API documentation** |
+| **B-BUF-2** | **10** | **Buffer** | **Performance optimization, Security audit** |
 
 ### Mobile Sprints (Flutter Devs)
 
