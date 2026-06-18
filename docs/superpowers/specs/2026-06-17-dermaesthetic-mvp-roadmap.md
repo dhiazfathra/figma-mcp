@@ -3,7 +3,7 @@
 **Date:** 2026-06-17
 **Status:** Draft - Pending Approval
 **Approach:** Phased Parallel Streams (Approach C)
-**Deferred:** Laundry, Loyalty & Membership
+**Deferred:** Laundry (confirmed), Loyalty & Membership (**needs re-evaluation — see Figma Cross-Check below**)
 
 ---
 
@@ -12,6 +12,7 @@
 | Metric | Value |
 |--------|-------|
 | Total Features | 14 (11 Phase 1 + 3 Phase 2) |
+| Figma Gap Items | 13 features in Figma but missing/deferred in roadmap (see "Figma Cross-Check" section) |
 | Total Sprints | 28 weeks (1 sprint = 1 week) |
 | Buffer Weeks | 4 weeks (strategic placement) |
 | Team | 2 Flutter devs, 2 Fullstack (CMS/BE) |
@@ -655,6 +656,71 @@ graph TD
 
 ---
 
+## Figma Cross-Check: Missing Requirements
+
+**Source:** [Figma Design](https://www.figma.com/design/qyBbEWy7V8v62219jwrRDT/Dermaesthetics-Super-App?node-id=386-4162) — "1. User Onboarding Module 2 - Final Design"
+**Inventory File:** `docs/superpowers/specs/2026-06-17-dermaesthetic-figma-features.md`
+
+### Features in Figma but MISSING from Roadmap
+
+| # | Feature | Figma Section | Severity | Notes |
+|---|---------|---------------|----------|-------|
+| 1 | **Voucher System** | Sec 6: Membership & Voucher | **HIGH** | Full voucher management: Voucher Homepage, Voucher Detail, Claim Voucher, "Klaim voucher anda" link, voucher count badge. Currently deferred as "Loyalty & Membership" but appears prominently in Figma as core UX. |
+| 2 | **Membership/Loyalty Program** | Sec 6: Membership & Voucher | **HIGH** | Green Member / Gold tiers, Points system (100 Points / 30 Points), progress bar to next tier ("Lakukan transaksi Rp900.000 lagi untuk mencapai level membership berikutnya"). Explicitly deferred but deeply integrated into Figma homepage and profile. |
+| 3 | **Multi-Brand Architecture** | Sec 1: Homepage | **MEDIUM** | 8+ brands with sub-brands: Dermaster, Derma Express, Dermalicious, Dexskin, Dermaklin, Dexbeauty, Filterbaby, Lainnya (contains Dermaster Plastic Surgery, Dermaster Hair Surgery). Roadmap treats brands generically. |
+| 4 | **OTP Delivery Channels** | Sec 2: Auth | **MEDIUM** | Figma shows 3 OTP channels: WhatsApp, SMS, Email. Roadmap only mentions "OTP verification" without channel differentiation. |
+| 5 | **Password Reset via Multiple Channels** | Sec 2: Auth | **MEDIUM** | Forgot Password flow supports WhatsApp, SMS, and Email OTP. Roadmap's Story 1.3 is simpler. |
+| 6 | **Sign Out Confirmation** | Sec 4: Profile | **LOW** | Dedicated "Keluar dari Dermaesthetics" dialog with "Tidak" / "Ya, Keluar" options. Not in roadmap. |
+| 7 | **Delete Account** | Sec 4: Profile | **MEDIUM** | Full delete account flow: warning dialog ("Seluruh data akan terhapus permanen"), confirmation, permanent deletion. Not in roadmap. |
+| 8 | **Location Permission & Map Pinning** | Sec 5: Address | **MEDIUM** | Location permission denied state, "Minta akses lokasi" / "Lanjut isi alamat" CTAs, interactive map for pinning address coordinates. Roadmap's address story is simpler. |
+| 9 | **Help Center** | Sec 4: Profile | **LOW** | Dedicated Help Center screen. Roadmap has "Contact Support" (Story 5.8) but Figma shows a richer Help Center. |
+| 10 | **Live Chat** | Sec 1: Homepage | **MEDIUM** | "Chat Sekarang" (Chat Now) button visible in UI. Not in roadmap. |
+| 11 | **Promo Code Input** | Sec 1: Homepage | **LOW** | "Kode Promo" input field during checkout. Not explicitly in roadmap's shop/cart stories. |
+| 12 | **Transaction Tabs (Order / Appointment)** | Sec 3: Activity | **LOW** | Aktivitas screen has Order and Appointment tab filters. Roadmap's History epic is simpler. |
+| 13 | **Empty State Screens** | Sec 1, 3 | **LOW** | Specific empty states for notifications ("Tidak ada notifikasi tersedia") and addresses ("Akses lokasi tidak di izinkan"). Roadmap mentions empty states generically. |
+
+### Already Covered in Roadmap (confirmed match)
+
+| Feature | Roadmap Epic | Status |
+|---------|-------------|--------|
+| Login | Epic 1 (Story 1.1) | ✅ Covered |
+| Register | Epic 1 (Story 1.2) | ✅ Covered |
+| Forgot Password | Epic 1 (Story 1.3) | ⚠️ Partial (missing multi-channel OTP) |
+| Onboarding Tutorial | Epic 1 (Story 1.4) | ✅ Covered |
+| Homepage (Non-login) | Epic 2 (Story 2.1) | ✅ Covered |
+| Homepage (Logged-in) | Epic 2 (Story 2.2) | ✅ Covered |
+| Search | Epic 2 (Story 2.3) | ✅ Covered |
+| Brand Listing | Epic 3 (Story 3.1) | ✅ Covered |
+| Brand Detail | Epic 3 (Story 3.2) | ✅ Covered |
+| Clinic Page | Epic 3 (Story 3.3) | ✅ Covered |
+| Treatment Page | Epic 3 (Story 3.4) | ✅ Covered |
+| Booking Clinic | Epic 4 (Stories 4.1–4.6) | ✅ Covered |
+| Profile Management | Epic 5 (Stories 5.1–5.8) | ⚠️ Partial (missing Sign Out, Delete Account) |
+| Notifications | Epic 6 (Stories 6.1–6.2) | ✅ Covered |
+| Promotions | Epic 7 (Stories 7.1–7.2) | ✅ Covered |
+| History | Epic 8 (Stories 8.1–8.2) | ⚠️ Partial (missing tab filters) |
+| Skin Analysis | Epic 9 (Stories 9.1–9.2) | ✅ Covered |
+| Healthy Food | Epic 10 (Stories 10.1–10.4) | ✅ Covered |
+| Shop | Epic 11 (Stories 11.1–11.4) | ⚠️ Partial (missing promo code input) |
+| Treatment Transaction | Epic 12 (Stories 12.1–12.2) | ✅ Covered |
+| Skin Journey | Epic 13 (Stories 13.1–13.2) | ✅ Covered |
+
+### Recommended Roadmap Updates
+
+1. **Un-defer Voucher & Membership** — The Figma shows this as a core homepage and profile feature, not a nice-to-have. Consider moving to Phase 1 or creating a lightweight version (view-only voucher list, membership tier display) for MVP.
+
+2. **Add OTP Channel Selection** — Update Story 1.1 (Login) and Story 1.3 (Forgot Password) to include WhatsApp/SMS/Email OTP delivery options.
+
+3. **Add Sign Out & Delete Account** — Add to Epic 5 (Profile Management) as Story 5.9 and 5.10.
+
+4. **Enhance Address Management** — Update Story 5.3 to include location permission handling and map pinning.
+
+5. **Add Help Center** — Upgrade Story 5.8 (Contact Support) to a full Help Center with FAQ categories and live chat entry point.
+
+6. **Document Multi-Brand Architecture** — Add a note in Epic 3 that the brand system supports 8+ brands with sub-brand relationships.
+
+---
+
 ## Approval Checklist
 
 - [ ] Epic breakdown approved
@@ -662,7 +728,8 @@ graph TD
 - [ ] Gantt chart approved
 - [ ] Risk register reviewed
 - [ ] Dependencies validated
-- [ ] Deferred features confirmed (Laundry, Loyalty)
+- [ ] Deferred features confirmed (Laundry, Loyalty — **NOTE: Figma shows Loyalty/Voucher as core; recommend re-evaluation**)
+- [ ] Figma cross-check gaps reviewed (13 items identified above)
 - [ ] Timeline accepted (28 weeks mobile with 4 buffer weeks, 10 weeks backend with 2 buffer weeks)
 - [ ] Buffer week placement approved
 - [ ] Buffer usage rules approved
